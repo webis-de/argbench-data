@@ -1,3 +1,4 @@
+## ArgBench Data
 - ArgBench is a benchmark for evaluating instruction-fine-tuned large language models on computational argumentation tasks. The benchmark consists of 57 tasks grouped into 5 skills: argument mining, argument quality assessment, argument perspective assessment, argument reasoning, and argument generation. Two evaluation setups are included in the benchmark: prompting and leave-one-task. The prompting setup evaluates large language models on computational argumentation tasks without fine-tuning them. The leave-ont-out setup evaluates the model’s generalizability to 5 target tasks, while offering the rest tasks as a training set. Each task is split into training, test, and validation.
 
 - tasks: contains the 57 tasks in a json format each task is split into 3 splits (training, val, and test). The files are formatted as follows {task}_{dataset}_{split}_{author}. For example, argument_ranking_ibm_evidence_quality_val_gleize19.
