@@ -1,3 +1,17 @@
+---
+configs:
+- config_name: unit_segmentation 
+  data_files:
+  - split: train
+    path: "tasks/argument_unit_segmentation_webDiscourse_train.json"
+  - split: test
+    path: "tasks/argument_unit_segmentation_webDiscourse_test.json"
+  - split: val
+    path: "tasks/argument_unit_segmentation_webDiscourse_val.json"
+
+---
+
+
 ## ArgBench Data
 - ArgBench is a benchmark for evaluating instruction-fine-tuned large language models on computational argumentation tasks. The benchmark consists of 46 tasks grouped into 5 skills: argument mining, argument quality assessment, argument perspective assessment, argument reasoning, and argument generation. Two evaluation setups are included in the benchmark: prompting and leave-one-task. The prompting setup evaluates large language models on computational argumentation tasks without fine-tuning them. The leave-ont-out setup evaluates the model’s generalizability to 5 target tasks, while offering the rest tasks as a training set. Each task is split into training, test, and validation.
 
